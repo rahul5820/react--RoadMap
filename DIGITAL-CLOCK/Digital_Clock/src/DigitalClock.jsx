@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
 function DigitalClock() {
-  const [time, SetTime] = useState(new Date());
+  const [time, SetTime] = useState(new Date());  // useState () hook to store the current time in the component's state
 
 
-  useEffect(()=>{
+  useEffect(()=>{    // useEffect for updating on each render 
     const intervalId = setInterval(()=>{
         SetTime(new Date())
     },1000)
 
-    console.log(new Date());
+    // console.log(new Date());
 
     return(()=>{
         clearInterval(intervalId)
@@ -20,7 +20,7 @@ function DigitalClock() {
 
 
 
-  function formatTime(){
+  function formatTime(){     // main funcrion for  creating time
     let Hours=time.getHours();
     const Minutes=time.getMinutes();
     const Seconds=time.getSeconds();
