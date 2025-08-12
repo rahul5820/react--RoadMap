@@ -1,0 +1,25 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  
+ 
+}
+.Annu-pic{
+  max-width: 30%;
+  width: auto;
+  border-radius: 50%;
+  margin-bottom:10px ;
+}
+
+.Food-list-Component{
+  margin-bottom: 75px;
+}
+.ArrayOfCar{
+margin-bottom: 100px;
+}
+.car-detail{
+  margin-bottom: 20px;
+}
